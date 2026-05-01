@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pearl text-ink font-body antialiased dark:bg-ink dark:text-pearl;
+    @apply text-[15px] leading-[1.7] sm:text-[16px];
+    margin: 0;
+    min-height: 100vh;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: rgba(255, 214, 10, 0.4);
+    color: #0b0b0b;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-black/10 bg-white/65 shadow-soft backdrop-blur-2xl dark:border-white/10 dark:bg-white/5;
+  }
+
+  .glow-hover {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.02] hover:shadow-glow;
+  }
+
+  .nav-link {
+    @apply px-2 py-2 text-[0.65rem] uppercase tracking-[0.32em] text-ink/70 transition hover:text-sun focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sun/40 dark:text-pearl/70 dark:hover:text-sun;
+  }
+
+  .chip {
+    @apply rounded-full border border-black/10 px-3 py-1 text-[0.6rem] uppercase tracking-[0.28em] text-ink/70 dark:border-white/10 dark:text-pearl/70;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full px-6 py-3 text-[0.68rem] font-semibold uppercase tracking-[0.32em] transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sun/40;
+  }
+
+  .btn-primary {
+    @apply btn border border-sun/70 bg-sun/90 text-ink hover:shadow-glow;
+  }
+
+  .btn-secondary {
+    @apply btn border border-black/10 bg-white/70 text-ink hover:border-sun/60 hover:shadow-glow dark:border-white/10 dark:bg-white/5 dark:text-pearl;
+  }
+
+  .btn-ghost {
+    @apply btn border border-black/10 text-ink hover:border-sun/60 hover:shadow-glow dark:border-white/10 dark:text-pearl;
+  }
+
+  .btn-sm {
+    @apply px-4 py-2 text-[0.6rem] tracking-[0.3em];
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-black/10 bg-white/70 px-4 py-3 text-sm text-ink outline-none transition duration-200 focus:border-sun/70 focus:ring-2 focus:ring-sun/30 dark:border-white/10 dark:bg-white/5 dark:text-pearl;
+  }
+
+  .label {
+    @apply text-[0.65rem] uppercase tracking-[0.32em] text-ink/60 dark:text-pearl/60;
+  }
+}
+
+@layer utilities {
+  .bg-mesh {
+    background-image: radial-gradient(circle at top left, rgba(255, 214, 10, 0.18), transparent 45%),
+      radial-gradient(circle at 20% 80%, rgba(255, 214, 10, 0.08), transparent 40%),
+      radial-gradient(circle at 70% 10%, rgba(255, 255, 255, 0.4), transparent 50%);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
