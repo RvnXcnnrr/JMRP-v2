@@ -36,7 +36,11 @@ const Navbar = ({ theme, onToggleTheme }) => {
             ))}
           </nav>
           <div className="flex items-center gap-3">
-            <a href="/resume.pdf" download className="btn-primary btn-sm hidden md:inline-flex">
+            <a
+              href="/resume/Rodillon-resume.pdf"
+              download
+              className="btn-primary btn-sm hidden md:inline-flex"
+            >
               Resume
             </a>
             <ThemeToggle theme={theme} onToggle={onToggleTheme} />
@@ -114,7 +118,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
                 ))}
               </nav>
               <div className="mt-8">
-                <a href="/resume.pdf" download className="btn-primary w-full">
+                <a href="/resume/Rodillon-resume.pdf" download className="btn-primary w-full">
                   Resume
                 </a>
               </div>

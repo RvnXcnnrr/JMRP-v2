@@ -1,6 +1,7 @@
 import Footer from '../components/layout/Footer'
 import Navbar from '../components/layout/Navbar'
 import About from '../sections/About'
+import Certifications from '../sections/Certifications'
 import Contact from '../sections/Contact'
 import Hero from '../sections/Hero'
 import Projects from '../sections/Projects'
@@ -15,6 +16,7 @@ const Home = ({ theme, onToggleTheme }) => {
         <Hero />
         <About />
         <Skills />
+        <Certifications />
         <Projects />
         <Services />
         <Contact />

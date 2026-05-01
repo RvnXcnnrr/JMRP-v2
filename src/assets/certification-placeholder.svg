@@ -1,0 +1,17 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cert-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD60A" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#F7F6F2" stop-opacity="0.5" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="48" fill="#0B0B0B" fill-opacity="0.06" />
+  <rect x="40" y="40" width="880" height="640" rx="40" fill="url(#cert-bg)" />
+  <rect x="120" y="140" width="520" height="48" rx="24" fill="#0B0B0B" fill-opacity="0.2" />
+  <rect x="120" y="220" width="360" height="32" rx="16" fill="#0B0B0B" fill-opacity="0.16" />
+  <rect x="120" y="300" width="640" height="20" rx="10" fill="#0B0B0B" fill-opacity="0.12" />
+  <rect x="120" y="340" width="520" height="20" rx="10" fill="#0B0B0B" fill-opacity="0.12" />
+  <rect x="120" y="380" width="560" height="20" rx="10" fill="#0B0B0B" fill-opacity="0.12" />
+  <circle cx="720" cy="450" r="90" fill="#FFD60A" fill-opacity="0.25" />
+  <circle cx="720" cy="450" r="56" fill="#0B0B0B" fill-opacity="0.2" />
+</svg>

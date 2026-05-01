@@ -15,6 +15,7 @@ export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Projects', href: '#projects' },
   { label: 'Services', href: '#services' },
   { label: 'Contact', href: '#contact' },
@@ -36,7 +37,7 @@ export const hero = {
     { label: 'Contact', href: '#contact', variant: 'secondary' },
     {
       label: 'Download Resume',
-      href: '/resume.pdf',
+      href: '/resume/Rodillon-resume.pdf',
       variant: 'ghost',
       download: true,
     },
@@ -81,6 +82,38 @@ export const skills = {
     {
       title: 'Development',
       items: ['HTML/CSS', 'JavaScript fundamentals', 'React basics', 'API integration'],
+    },
+  ],
+}
+
+export const certifications = {
+  eyebrow: 'Certifications',
+  title: 'Verified credentials with privacy-first previews',
+  subtitle: 'Blurred previews keep sensitive details protected while still proving expertise.',
+  items: [
+    {
+      title: 'IT Support Certificate',
+      issuer: 'Google',
+      year: '2024',
+      alt: 'Blurred IT certification preview',
+    },
+    {
+      title: 'Networking Fundamentals',
+      issuer: 'Cisco',
+      year: '2023',
+      alt: 'Blurred networking certification preview',
+    },
+    {
+      title: 'System Administration Essentials',
+      issuer: 'Microsoft',
+      year: '2024',
+      alt: 'Blurred systems certification preview',
+    },
+    {
+      title: 'Cybersecurity Basics',
+      issuer: 'Coursera',
+      year: '2023',
+      alt: 'Blurred cybersecurity certification preview',
     },
   ],
 }
