@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import TypingText from '../components/effects/TypingText'
+import Logo from '../components/ui/Logo'
 import ProfileAvatar from '../components/ui/ProfileAvatar'
 import { hero, profile } from '../data/portfolio'
 import { fadeUp, stagger } from '../utils/motion'
@@ -13,7 +14,7 @@ const ctaClasses = {
   ghost: 'btn-ghost',
 }
 
-const Hero = () => {
+const Hero = ({ theme }) => {
   const sectionRef = useRef(null)
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -47,9 +48,27 @@ const Hero = () => {
               >
                 {profile.availability}
               </motion.p>
+              {profile.logo?.showInHero && (
+                <motion.div
+                  variants={fadeUp}
+                  className="mt-5 flex justify-center md:justify-start"
+                >
+                  <Logo
+                    theme={theme}
+                    src={profile.logo?.src}
+                    srcLight={profile.logo?.srcLight}
+                    srcDark={profile.logo?.srcDark}
+                    alt={profile.logo?.alt}
+                    tone={profile.logo?.tone}
+                    glowOnDark={profile.logo?.glowOnDark}
+                    sizeClassName="h-14 sm:h-16 lg:h-20"
+                    className="opacity-90"
+                  />
+                </motion.div>
+              )}
               <motion.h1
                 variants={fadeUp}
-                className="mt-5 mx-auto max-w-3xl text-3xl font-semibold leading-[1.05] text-ink dark:text-pearl sm:text-5xl md:mx-0 lg:text-7xl"
+                className="mt-4 mx-auto max-w-3xl text-3xl font-semibold leading-[1.05] text-ink dark:text-pearl sm:text-5xl md:mx-0 lg:text-7xl"
               >
                 {profile.name}
               </motion.h1>

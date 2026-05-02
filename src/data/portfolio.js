@@ -1,6 +1,13 @@
 export const profile = {
   name: 'Javy M. Rodillon',
   brandName: 'JMRP',
+  logo: {
+    srcLight: '/logo/JR-logo-lightmode.png',
+    srcDark: '/logo/JR-logo-darkmode.png',
+    alt: 'Javy Rodillon Logo',
+    showInHero: false,
+    glowOnDark: true,
+  },
   title: 'IT Graduate | System Builder | Problem Solver',
   availability: 'Available for IT roles',
   footer: 'Crafted for calm, reliable IT systems',
@@ -15,6 +22,7 @@ export const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'Projects', href: '#projects' },
   { label: 'Services', href: '#services' },
@@ -82,6 +90,42 @@ export const skills = {
     {
       title: 'Development',
       items: ['HTML/CSS', 'JavaScript fundamentals', 'React basics', 'API integration'],
+    },
+  ],
+}
+
+export const experience = {
+  eyebrow: 'Experience',
+  title: 'Experience timeline with real-world impact',
+  subtitle: 'A focused look at roles, projects, and hands-on IT work over time.',
+  items: [
+    {
+      title: 'IT Support Intern',
+      company: 'Local Tech Office',
+      date: '2024',
+      description:
+        'Assisted in troubleshooting hardware and software issues, imaging devices, and supporting network setup for daily operations.',
+      tags: ['IT support', 'Networking', 'Imaging'],
+      icon: 'IT',
+    },
+    {
+      title: 'Capstone Project - Smart IoT System',
+      company: 'Smart Anom Monitoring',
+      date: '2025',
+      description:
+        'Built an ESP32-based real-time monitoring system with a web dashboard for sensor data and alert tracking.',
+      tags: ['ESP32', 'Sensors', 'Dashboard'],
+      icon: 'IoT',
+    },
+    {
+      title: 'Freelance / Personal Projects',
+      company: 'Independent',
+      date: '2023 - Present',
+      description:
+        'Developed small systems, handled technical troubleshooting, and delivered reliable support for local clients.',
+      tags: ['Support', 'Automation', 'Web'],
+      icon: 'FP',
+      current: true,
     },
   ],
 }

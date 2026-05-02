@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { navLinks, profile } from '../../data/portfolio'
+import Logo from '../ui/Logo'
 import ThemeToggle from '../ui/ThemeToggle'
 
 const Navbar = ({ theme, onToggleTheme }) => {
@@ -18,12 +19,18 @@ const Navbar = ({ theme, onToggleTheme }) => {
   return (
     <header className="sticky top-0 z-40">
       <div className="glass border-b border-black/10 px-5 py-4 dark:border-white/10 sm:px-6 sm:py-5 lg:px-8">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 xl:max-w-7xl">
-          <a
-            href="#home"
-            className="font-display text-lg font-semibold tracking-tight text-ink dark:text-pearl"
-          >
-            {profile.brandName || profile.name}
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 lg:gap-8 xl:max-w-7xl">
+          <a href="#home" aria-label="Go to hero section" className="group inline-flex items-center">
+            <Logo
+              theme={theme}
+              src={profile.logo?.src}
+              srcLight={profile.logo?.srcLight}
+              srcDark={profile.logo?.srcDark}
+              alt={profile.logo?.alt}
+              tone={profile.logo?.tone}
+              glowOnDark={profile.logo?.glowOnDark}
+              sizeClassName="h-7 sm:h-9 lg:h-10"
+            />
           </a>
           <nav
             aria-label="Primary"

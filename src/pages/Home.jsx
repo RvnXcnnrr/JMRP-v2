@@ -3,6 +3,7 @@ import Navbar from '../components/layout/Navbar'
 import About from '../sections/About'
 import Certifications from '../sections/Certifications'
 import Contact from '../sections/Contact'
+import Experience from '../sections/Experience'
 import Hero from '../sections/Hero'
 import Projects from '../sections/Projects'
 import Services from '../sections/Services'
@@ -13,9 +14,10 @@ const Home = ({ theme, onToggleTheme }) => {
     <div className="relative z-10">
       <Navbar theme={theme} onToggleTheme={onToggleTheme} />
       <main>
-        <Hero />
+        <Hero theme={theme} />
         <About />
         <Skills />
+        <Experience />
         <Certifications />
         <Projects />
         <Services />
