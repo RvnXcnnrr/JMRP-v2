@@ -92,28 +92,28 @@ export const certifications = {
   subtitle: 'Blurred previews keep sensitive details protected while still proving expertise.',
   items: [
     {
-      title: 'IT Support Certificate',
-      issuer: 'Google',
-      year: '2024',
-      alt: 'Blurred IT certification preview',
+      title: 'CCNA: Enterprise Networking, Security, and Automation',
+      image: '/certificates/CCNA.png',
+      alt: 'Blurred CCNA certification preview',
     },
     {
-      title: 'Networking Fundamentals',
-      issuer: 'Cisco',
-      year: '2023',
-      alt: 'Blurred networking certification preview',
+      title: 'CyberOps Associate',
+      image: '/certificates/CYBEROPS.png',
+      alt: 'Blurred CyberOps Associate certification preview',
     },
     {
-      title: 'System Administration Essentials',
-      issuer: 'Microsoft',
-      year: '2024',
-      alt: 'Blurred systems certification preview',
+      title: 'NCII CSS',
+      image: '/certificates/ncii-css.jpg',
+      alt: 'Blurred NCII CSS certification preview',
     },
     {
-      title: 'Cybersecurity Basics',
-      issuer: 'Coursera',
-      year: '2023',
-      alt: 'Blurred cybersecurity certification preview',
+      title: 'HUBE OJT',
+      image: '/certificates/hube-ojt.jpg',
+      alt: 'Blurred HUBE OJT certificate preview',
+    },
+    {
+      title: 'WELA OJT',
+      alt: 'Placeholder WELA OJT certificate preview',
     },
   ],
 }
@@ -124,28 +124,28 @@ export const projects = {
   subtitle: 'Focused on clarity, system reliability, and faster support delivery.',
   items: [
     {
-      title: 'Campus Helpdesk Tracker',
+      title: 'Divine Mercy School of Bukidnon INC.',
       description:
-        'A lightweight ticketing dashboard that tracks common IT requests, asset logs, and response time targets.',
-      stack: ['React', 'Tailwind', 'Local Storage'],
-      live: 'https://example.com',
-      repo: 'https://github.com',
+        'A private school website for updates, events, and advertising school programs.',
+      stack: ['React', 'Tailwind', 'Netlify'],
+      live: 'https://dmsb.netlify.app/',
+      repo: null,
     },
     {
-      title: 'Network Health Snapshot',
+      title: 'RMTI TESDA School Website',
       description:
-        'A simple network status checker that visualizes device uptime and alerts for connectivity drops.',
-      stack: ['Node.js', 'Charting', 'REST APIs'],
-      live: 'https://example.com',
-      repo: 'https://github.com',
+        'A private TESDA school website for ads, events, and news updates.',
+      stack: ['React', 'Tailwind', 'Vercel'],
+      live: 'https://rmti.vercel.app/',
+      repo: null,
     },
     {
-      title: 'IT Onboarding Portal',
+      title: 'Smart Anom Hydroponics Monitoring (Capstone)',
       description:
-        'A guided onboarding flow for new team members with setup steps, policy references, and FAQ support.',
-      stack: ['React', 'Framer Motion', 'Tailwind'],
-      live: 'https://example.com',
-      repo: 'https://github.com',
+        'An ESP32 and water sensor system for monitoring hydroponics plants, paired with a school website.',
+      stack: ['ESP32', 'Sensors', 'Django', 'Web Dashboard'],
+      live: 'https://smartanom.me/',
+      repo: null,
     },
   ],
 }
@@ -183,7 +183,7 @@ export const contact = {
   socialLabel: 'Social',
   socials: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com' },
-    { label: 'GitHub', href: 'https://github.com' },
+    { label: 'GitHub', href: 'https://github.com/RvnXcnnrr' },
     { label: 'Behance', href: 'https://www.behance.net' },
   ],
 }

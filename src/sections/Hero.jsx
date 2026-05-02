@@ -2,9 +2,10 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import TypingText from '../components/effects/TypingText'
 import ProfileAvatar from '../components/ui/ProfileAvatar'
-import profileImage from '../assets/profile/proflie-image.jpg'
 import { hero, profile } from '../data/portfolio'
 import { fadeUp, stagger } from '../utils/motion'
+
+const profileImage = '/profile/proflie-image.jpg'
 
 const ctaClasses = {
   primary: 'btn-primary',

@@ -29,22 +29,26 @@ const Projects = () => {
               </div>
             </div>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-primary w-full sm:flex-1"
-              >
-                View
-              </a>
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-secondary w-full sm:flex-1"
-              >
-                GitHub
-              </a>
+              {project.live && (
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-primary w-full sm:flex-1"
+                >
+                  View
+                </a>
+              )}
+              {project.repo && (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-secondary w-full sm:flex-1"
+                >
+                  GitHub
+                </a>
+              )}
             </div>
           </Card>
         ))}
