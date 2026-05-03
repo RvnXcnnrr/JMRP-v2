@@ -72,12 +72,24 @@ const Hero = ({ theme }) => {
               >
                 {profile.name}
               </motion.h1>
+              <motion.div variants={fadeUp} className="mt-4 flex justify-center md:justify-start">
+                <span className="inline-flex items-center gap-2 rounded-full bg-sun px-4 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.26em] text-ink shadow-glow">
+                  <span aria-hidden="true">⚙</span>
+                  {profile.badge}
+                </span>
+              </motion.div>
               <motion.h2
                 variants={fadeUp}
                 className="mt-4 mx-auto max-w-3xl text-base font-medium text-ink/80 dark:text-pearl/80 sm:text-xl md:mx-0 lg:text-2xl"
               >
                 {profile.title}
               </motion.h2>
+              <motion.p
+                variants={fadeUp}
+                className="mt-3 mx-auto max-w-3xl text-sm text-ink/75 dark:text-pearl/75 sm:text-base md:mx-0"
+              >
+                {hero.subtitle}
+              </motion.p>
               <motion.div variants={fadeUp} className="mt-6">
                 <TypingText
                   phrases={hero.typingPhrases}

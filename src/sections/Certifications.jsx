@@ -4,6 +4,14 @@ import { certifications } from '../data/portfolio'
 import certPlaceholder from '../assets/certification-placeholder.svg'
 
 const Certifications = () => {
+  const sortedItems = [...certifications.items].sort((a, b) => {
+    if (Boolean(a.highlight) !== Boolean(b.highlight)) {
+      return a.highlight ? -1 : 1
+    }
+
+    return a.title.localeCompare(b.title)
+  })
+
   return (
     <SectionWrapper
       id="certifications"
@@ -11,15 +19,19 @@ const Certifications = () => {
       title={certifications.title}
       subtitle={certifications.subtitle}
     >
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {certifications.items.map((item) => (
+      <div className="grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {sortedItems.map((item) => (
           <CertificationCard
             key={item.title}
             imageSrc={item.image || certPlaceholder}
             alt={item.alt}
             title={item.title}
+            subtitle={item.subtitle}
+            description={item.description}
             issuer={item.issuer}
             year={item.year}
+            badge={item.badge}
+            highlight={item.highlight}
           />
         ))}
       </div>

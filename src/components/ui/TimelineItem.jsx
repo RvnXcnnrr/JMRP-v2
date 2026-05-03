@@ -29,8 +29,8 @@ const TimelineItem = ({ item, index }) => {
     >
       <span className="absolute left-4 top-7 h-3.5 w-3.5 rounded-full bg-sun shadow-glow ring-4 ring-ink/80 dark:ring-graphite md:left-1/2" />
       <div className={`ml-12 md:ml-0 md:w-[calc(50%-1.5rem)] ${spacing}`}>
-        <div
-          className={`rounded-3xl border border-white/10 bg-ink/95 p-6 text-pearl shadow-soft transition duration-300 hover:scale-105 hover:border-sun/70 hover:shadow-glow dark:bg-graphite ${cardAlign}`}
+          <div
+          className={`rounded-2xl border border-white/10 bg-ink/95 p-6 text-pearl shadow-soft transition duration-300 hover:scale-105 hover:border-sun/70 hover:shadow-glow dark:bg-graphite ${cardAlign}`}
         >
           <div className="flex items-start gap-4">
             {item.icon && (

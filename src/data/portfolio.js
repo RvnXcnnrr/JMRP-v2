@@ -8,11 +8,11 @@ export const profile = {
     showInHero: false,
     glowOnDark: true,
   },
-  title: 'IT Graduate | System Builder | Problem Solver',
+  title: 'IT Professional | Developer + System Administrator',
   availability: 'Available for IT roles',
   footer: 'Crafted for calm, reliable IT systems',
   imageAlt: 'Portrait of Javy M. Rodillon',
-  badge: 'Available for Work',
+  badge: 'Dev + SysAdmin',
   location: 'Cagay de Oro Misamis Oriental',
   email: 'rodillon.javy.32181@gmail.com',
   phone: '+63 916 165 2279',
@@ -30,10 +30,11 @@ export const navLinks = [
 ]
 
 export const hero = {
+  subtitle: 'I build, manage, and optimize real-world systems.',
   typingPhrases: [
-    'Optimizing systems for people',
-    'Building resilient networks',
-    'Turning issues into solutions',
+    'Building dependable apps and infrastructure',
+    'Managing systems with uptime-first discipline',
+    'Turning operational issues into stable workflows',
   ],
   highlights: [
     'System builder with hands-on troubleshooting experience',
@@ -58,7 +59,7 @@ export const about = {
   subtitle:
     'I focus on building dependable environments, guiding users through change, and keeping technology quietly reliable.',
   intro:
-    'As an IT graduate, I blend hands-on troubleshooting with a calm, service-first mindset. I enjoy translating technical needs into clear steps, whether I am configuring a workstation, strengthening a network, or collaborating on a web experience. My goal is to keep systems stable, people supported, and processes easy to follow.',
+    'I work across development and operations, building and customizing workflow-driven systems using Frappe Framework v11 and v15. Alongside feature delivery, I handle deployment, maintenance, and troubleshooting to keep services stable and responsive. This hybrid approach helps improve data accuracy, operational reliability, and day-to-day system usability.',
   focusLabel: 'Focus Areas',
   focusTitle: 'Reliable systems, real-world impact',
   focusItems: [
@@ -70,26 +71,31 @@ export const about = {
 
 export const skills = {
   eyebrow: 'Skills',
-  title: 'Toolbox built for modern IT work',
+  title: 'Hybrid toolkit for development and operations',
   subtitle:
-    'Solid fundamentals across infrastructure, productivity tooling, and web delivery.',
+    'Core capabilities across system development, administration, and production-ready tooling.',
   groups: [
     {
-      title: 'Technical',
+      title: 'Development',
       items: [
-        'Networking basics',
-        'Hardware diagnostics',
-        'System imaging',
-        'IT documentation',
+        'Frappe Framework (v11, v15)',
+        'Web Development',
+        'Workflow Customization',
+        'Data Validation Logic',
+      ],
+    },
+    {
+      title: 'System Administration',
+      items: [
+        'System Deployment',
+        'Server Configuration',
+        'Troubleshooting',
+        'Performance Monitoring',
       ],
     },
     {
       title: 'Tools',
-      items: ['Windows & Linux', 'Active Directory', 'Microsoft 365', 'Git/GitHub'],
-    },
-    {
-      title: 'Development',
-      items: ['HTML/CSS', 'JavaScript fundamentals', 'React basics', 'API integration'],
+      items: ['Windows & Linux', 'Git/GitHub', 'Microsoft 365', 'Monitoring Utilities'],
     },
   ],
 }
@@ -100,13 +106,19 @@ export const experience = {
   subtitle: 'A focused look at roles, projects, and hands-on IT work over time.',
   items: [
     {
-      title: 'IT Support Intern',
-      company: 'Local Tech Office',
+      title: 'Product Developer Intern',
+      company: 'Livro Wela School Systems - Grading Department',
       date: '2024',
       description:
-        'Assisted in troubleshooting hardware and software issues, imaging devices, and supporting network setup for daily operations.',
-      tags: ['IT support', 'Networking', 'Imaging'],
-      icon: 'IT',
+        'Developed and customized grading system features using Frappe Framework v11 and v15, with a focus on accurate records and reliable academic workflows. Maintained and improved core functionality through structured troubleshooting and debugging of system issues. Assisted optimization and upgrade activities between framework versions to strengthen performance and long-term maintainability.',
+      tags: [
+        'FRAPPE FRAMEWORK',
+        'SYSTEM DEVELOPMENT',
+        'DATA MANAGEMENT',
+        'TROUBLESHOOTING',
+        'VERSION MIGRATION',
+      ],
+      icon: 'PD',
     },
     {
       title: 'Capstone Project - Smart IoT System',
@@ -139,25 +151,44 @@ export const certifications = {
       title: 'CCNA: Enterprise Networking, Security, and Automation',
       image: '/certificates/CCNA.png',
       alt: 'Blurred CCNA certification preview',
+      description:
+        'Validated networking, security, and automation competencies for configuring and maintaining modern enterprise infrastructures.',
     },
     {
       title: 'CyberOps Associate',
       image: '/certificates/CYBEROPS.png',
       alt: 'Blurred CyberOps Associate certification preview',
+      description:
+        'Demonstrated operational cybersecurity skills including monitoring, incident analysis, and defensive response workflows.',
     },
     {
       title: 'NCII CSS',
       image: '/certificates/ncii-css.jpg',
       alt: 'Blurred NCII CSS certification preview',
+      description:
+        'Certified in computer systems servicing with hands-on capability in hardware setup, diagnostics, and technical support procedures.',
     },
     {
-      title: 'HUBE OJT',
+      title: 'Hube OJT',
       image: '/certificates/hube-ojt.jpg',
       alt: 'Blurred HUBE OJT certificate preview',
+      description:
+        'Completed on-the-job training focused on practical IT support, troubleshooting tasks, and day-to-day system maintenance.',
     },
     {
-      title: 'WELA OJT',
+      title: 'Wela OJT',
       alt: 'Placeholder WELA OJT certificate preview',
+      description:
+        'Participated in structured OJT activities covering operational workflows, user support, and foundational system administration tasks.',
+    },
+    {
+      title: 'College Diploma',
+      subtitle: 'Bachelor of Science in Information Technology',
+      description:
+        'Completed foundational and advanced IT coursework across systems, networking, and software development.',
+      alt: 'Blurred College Diploma preview',
+      badge: 'Official Diploma',
+      highlight: true,
     },
   ],
 }
@@ -196,9 +227,19 @@ export const projects = {
 
 export const services = {
   eyebrow: 'Services',
-  title: 'Support that keeps teams moving',
-  subtitle: 'Practical services for individuals, labs, and small teams.',
+  title: 'Development and operations support that keeps teams moving',
+  subtitle: 'Hybrid services that combine delivery speed, stability, and practical system ownership.',
   items: [
+    {
+      title: 'System Development',
+      description:
+        'Design and customize business workflows, forms, and modules for reliable day-to-day operations.',
+    },
+    {
+      title: 'System Administration',
+      description:
+        'Deploy, configure, and maintain systems with uptime-focused monitoring and controlled updates.',
+    },
     {
       title: 'PC Troubleshooting',
       description:
@@ -207,14 +248,6 @@ export const services = {
     {
       title: 'Network Setup',
       description: 'Configure routers, switches, and secure connectivity for small teams.',
-    },
-    {
-      title: 'System Setup',
-      description: 'Deploy clean workstation builds with consistent tools and updates.',
-    },
-    {
-      title: 'Basic Web Development',
-      description: 'Build clean, responsive sites that connect people to services quickly.',
     },
   ],
 }

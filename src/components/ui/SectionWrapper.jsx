@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { fadeUp } from '../../utils/motion'
+import { fadeUp, stagger } from '../../utils/motion'
 
 const SectionWrapper = ({ id, eyebrow, title, subtitle, children }) => {
   return (
@@ -31,7 +31,15 @@ const SectionWrapper = ({ id, eyebrow, title, subtitle, children }) => {
             </div>
           </motion.div>
         )}
-        <div className="mt-10 sm:mt-12">{children}</div>
+        <motion.div
+          variants={stagger()}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
+          className="mt-10 sm:mt-12"
+        >
+          {children}
+        </motion.div>
       </div>
     </section>
   )

@@ -2,7 +2,17 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import Card from './Card'
 
-const CertificationCard = ({ imageSrc, alt, title, issuer, year }) => {
+const CertificationCard = ({
+  imageSrc,
+  alt,
+  title,
+  subtitle,
+  description,
+  issuer,
+  year,
+  badge,
+  highlight = false,
+}) => {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -22,7 +32,13 @@ const CertificationCard = ({ imageSrc, alt, title, issuer, year }) => {
 
   return (
     <>
-      <Card className="group relative flex h-full flex-col">
+      <Card
+        className={`group relative flex h-full flex-col ${
+          highlight
+            ? 'ring-1 ring-sun/50 shadow-[0_0_20px_rgba(255,214,10,0.2)]'
+            : ''
+        }`}
+      >
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-black/10 transition duration-300 group-hover:ring-2 group-hover:ring-sun/70 dark:ring-white/10">
           <img
             src={imageSrc}
@@ -32,6 +48,13 @@ const CertificationCard = ({ imageSrc, alt, title, issuer, year }) => {
             className="h-full w-full object-cover blur-lg transition duration-300 group-hover:scale-105 group-hover:blur-md"
           />
           <div className="absolute inset-0 bg-ink/30 dark:bg-ink/45" />
+          {badge && (
+            <div className="absolute left-3 top-3">
+              <span className="rounded-full border border-sun/70 bg-sun/90 px-3 py-1 text-[0.52rem] font-semibold uppercase tracking-[0.26em] text-ink shadow-glow">
+                {badge}
+              </span>
+            </div>
+          )}
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-[0.55rem] font-semibold uppercase tracking-[0.4em] text-pearl/70">
               Protected Preview
@@ -42,11 +65,19 @@ const CertificationCard = ({ imageSrc, alt, title, issuer, year }) => {
           <h3 className="text-base font-semibold text-ink dark:text-pearl sm:text-lg">
             {title}
           </h3>
+          {subtitle && (
+            <p className="mt-2 text-sm font-medium text-ink/75 dark:text-pearl/75">{subtitle}</p>
+          )}
           {(issuer || year) && (
             <p className="mt-2 text-sm text-ink/60 dark:text-pearl/60">
               {issuer && <span>{issuer}</span>}
               {issuer && year && <span className="mx-2">•</span>}
               {year && <span>{year}</span>}
+            </p>
+          )}
+          {description && (
+            <p className="mt-3 text-sm leading-relaxed text-ink/70 dark:text-pearl/70">
+              {description}
             </p>
           )}
         </div>

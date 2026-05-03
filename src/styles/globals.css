@@ -55,7 +55,7 @@
   }
 
   .btn {
-    @apply inline-flex min-h-[44px] items-center justify-center rounded-full px-6 py-3 text-[0.68rem] font-semibold uppercase tracking-[0.32em] transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sun/40;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full px-6 py-3 text-[0.68rem] font-semibold uppercase tracking-[0.32em] transition-transform duration-200 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sun/40 transform;
   }
 
   .btn-primary {
@@ -80,6 +80,21 @@
 
   .label {
     @apply text-[0.65rem] uppercase tracking-[0.32em] text-ink/60 dark:text-pearl/60;
+  }
+}
+
+@layer components {
+  .btn:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
