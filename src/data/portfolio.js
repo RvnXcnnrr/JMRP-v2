@@ -177,6 +177,7 @@ export const certifications = {
     },
     {
       title: 'Wela OJT',
+      image: '/certificates/wela-ojt.jpg',
       alt: 'Placeholder WELA OJT certificate preview',
       description:
         'Participated in structured OJT activities covering operational workflows, user support, and foundational system administration tasks.',
